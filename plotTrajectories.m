@@ -12,15 +12,6 @@ function plotTrajectories(tspan)
     % look up safety radii in x and y directions
     [safeX, safeY] = lookUpSafetyRadius(x0(3), x0(4), 'safety_radii.dat');
     
-    
-    % will need to look safety radii for x-vel, y-vel? 
-    % have another file for ODE_safetyActionDynamic?
-    % where custom LQR will be used to emphasize stabilization of
-    % veloctities
-    % alernatively, maybe only one input signal can be allowed per interval
-    
-   
-
     % if we are too close to the obstacle start safety action]
     % since assume that the origin of the system is half way from either
     % constraint, then xBoundLeft is a negative number
