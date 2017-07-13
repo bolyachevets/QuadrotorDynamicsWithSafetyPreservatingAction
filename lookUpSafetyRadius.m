@@ -1,5 +1,5 @@
 % will need to update the input state variables to be compared against
-% grided values
+% gridded values
 function [safeX, safeY] = lookUpSafetyRadius(xvel, yvel, file)
     gridData = importdata(file);   
     for i = 1:length(gridData)
